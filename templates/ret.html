@@ -24,7 +24,7 @@
             <section class="form-box">
                   <div>
                     {% if data %}
-                      <p >Predicted Plant: {{ data[0] }} </p>
+                      <p >Predicted Plant: {{ data[0][0] }} </p>
                       <video width="640" height="360" controls>
                         <source src="{{ url_for('static', filename='vid.mp4') }}" type="video/mp4">
                         Your browser does not support the video tag.
